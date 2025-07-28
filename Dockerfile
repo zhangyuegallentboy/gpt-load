@@ -9,7 +9,7 @@ RUN VITE_VERSION=${VERSION} npm run build
 
 FROM golang:alpine AS builder2
 
-ARG VERSION=1.0.0
+ARG VERSION=1.0.17
 ENV GO111MODULE=on \
     CGO_ENABLED=0 \
     GOOS=linux
