@@ -6,7 +6,6 @@ COPY ./web .
 RUN npm install
 RUN VITE_VERSION=${VERSION} npm run build
 
-
 FROM golang:alpine AS builder2
 
 ARG VERSION=1.0.17
