@@ -1,6 +1,6 @@
 FROM node:20-alpine AS builder
 
-ARG VERSION=1.0.0
+ARG VERSION=1.0.17
 WORKDIR /build
 COPY ./web .
 RUN npm install
